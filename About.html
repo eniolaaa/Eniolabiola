@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Karla|Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<title>Eniola</title>
+	<style>
+		body {
+			background-color: white;
+			margin-top: 30px;
+			color: black;
+		}
+
+		.EA-container {
+			max-width: 1024px;
+			padding: 0px 15px;
+			margin: 0px auto;
+
+		}
+		.header {
+			overflow: hidden;
+		}
+
+		h1 {
+			margin-top: 10%;
+			font-weight: 900;
+			font-family: 'Source Sans Pro', sans-serif;
+			color: #333333;
+			font-family: 'Karla', sans-serif;
+			font-size: 85px;
+		}
+
+		nav.main-nav a.active {
+			border-bottom: 3px solid black;
+		}
+
+		nav.main-nav a:hover {
+			border-bottom: 3px solid #95FC15;
+		}
+
+		nav.main-nav a {
+			text-decoration: none;
+			color: black;
+			display: inline;
+			font-size: 14px;
+			letter-spacing: 1px;
+			font-weight: 800;
+			line-height: 1;
+			text-transform: uppercase;
+			margin-right: 45px;
+			padding-bottom: 5px;
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+
+		nav.main-nav a:last-of-type {
+			margin-right: 0;
+		}
+
+		.logo h1 {
+			font-family: 'Megrim', cursive;
+			font-size: 48px;
+		}
+
+		nav.main-nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		.about {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 10%;
+			margin-bottom: 80px;
+		}
+
+		h2 {
+			font-size: 50px;
+			font-family: 'Karla', sans-serif;
+		}
+
+		h5 {
+			margin-top: 50px;
+			font-family: 'Karla', sans-serif;
+			line-height: 30px;
+			color: #333333;
+		}
+
+		.content {
+			max-width: 550px;
+			margin-right: 48px;
+		}
+
+		.image {
+			max-width: 350px;
+		}
+
+		a.mail {
+			color: #95FC15;
+		}
+
+		a.tweet {
+			color: #95FC15;
+		}
+
+		.footer a {
+			color: #333333;
+			text-decoration: none;
+			font-family: 'Karla', sans-serif;
+			letter-spacing: 1px;
+			font-size: 17px;
+		}
+
+		p {
+			font-family: 'Karla', sans-serif;
+			color: #333333;
+			letter-spacing: 1px;
+			padding-top: 15px;
+		}
+
+		.footer {
+			padding-bottom: 40px;
+			line-height: 30px;
+		}
+
+		.footer a:hover {
+			border-bottom: 3px solid rgb(75, 75, 75);
+		}
+
+		@media(max-width:400px) {
+			nav.logo h1 {
+				text-align: center;
+				float: none;
+			}
+
+			nav.main-nav a {
+				text-align: center;
+				float: none;
+			}
+		}
+
+		@media(max-width: 768px) {
+			.about {
+				flex-direction: column;
+				align-items: unset;
+			}
+
+			.content {
+				margin-right: 0;
+				order: 2;
+				max-width: 100%;
+			}
+
+			.image {
+				max-width: 100%;
+				margin-bottom: 48px;
+			}
+
+			nav.main-nav {
+				flex-direction: column;
+			}
+
+			.logo h1 {
+				margin-bottom: 32px;
+			}
+
+			nav.main-nav a.active {
+			border-bottom: 3px solid black;
+			}
+
+			nav.main-nav a:hover {
+			border-bottom: 3px solid #95FC15;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="EA-container">
+		<section class="header">
+			<div class="" id="menu">
+				<nav class="main-nav">
+					<div class="logo">
+						<h1>EA</h1>
+					</div>
+					<div>
+						<a href="index.html" class="Work">Work</a>
+						<a href="about.html" class="active">About</a>
+						<a href="Resume.pdf" target="_blank">Resume</a>
+					</div>
+				</nav>
+			</div>
+		</section>
+		<section class="about">
+			<div class="content">
+				<h2>Hello again !!!</h2>
+				<h5>I'm Eniola, a UX Designer currently looking for a full time position anywhere in the world. I enjoy solving
+					problems and making lives easier through technology and design.
+					<br>
+					<br>
+					When I'm not designing, I enjoy reading African Literature or tweeting random thoughts on <a class="tweet" href="https://twitter.com/Folaranmiii"
+					 target="_blank"> Twitter.</a>
+					<br>
+					<br> If you have a project you want me to be a part of don't hesitate to send me an <a class="mail" href=mailto:eniolabiola@gmail.com
+					 target="_blank">Email.</a></h5>
+			</div>
+			<div class="image"><img src="Eniola.jpg" alt="Picture of me"></div>
+		</section>
+		<section class="footer">
+			<div class="contact">
+				<center><a href="mailto:eniolabiola@gmail.com" target="_blank">Email</a>
+					|
+					<a href="https://www.linkedin.com/in/eniolaaminu/" target="_blank">LinkedIn</a>
+					|
+					<a href="https://www.behance.net/eniolabiol1fcc" target="_blank">Behance</a>
+					|
+					<a href="https://twitter.com/Folaranmiii" target="_blank">Twitter</a>
+					<br>
+					<p> Eniola Abiola © 2018</p>
+				</center>
+
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>

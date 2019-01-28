@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Karla|Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<title>Eniola</title>
+	<style>
+		body {
+			background-color: white;
+			margin-top: 30px;
+			color: black;
+		}
+
+		.EA-container {
+			max-width: 1024px;
+			padding: 0px 15px;
+			margin: 0px auto;
+
+		}
+
+		.header {
+			overflow: hidden;
+		}
+
+		h1 {
+			margin-top: 10%;
+			font-weight: 900;
+			font-family: 'Source Sans Pro', sans-serif;
+			color: #333333;
+			font-family: 'Karla', sans-serif;
+			font-size: 85px;
+		}
+
+		nav.main-nav a.active {
+			border-bottom: 3px solid black;
+		}
+
+		nav.main-nav a:hover {
+			border-bottom: 3px solid #95FC15;
+		}
+
+		nav.main-nav a {
+			text-decoration: none;
+			color: black;
+			display: inline;
+			font-size: 14px;
+			letter-spacing: 1px;
+			font-weight: 800;
+			line-height: 1;
+			text-transform: uppercase;
+			margin-right: 45px;
+			padding-bottom: 5px;
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+
+		nav.main-nav a:last-of-type {
+			margin-right: 0;
+		}
+
+		.logo h1 {
+			font-family: 'Megrim', cursive;
+			font-size: 48px;
+
+		}
+
+		nav.main-nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		h4 {
+			margin-top: 20px;
+			color: #666666;
+			font-size: 24px;
+			line-height: 40px;
+			font-weight: 400;
+			font-family: 'Karla', sans-serif;
+		}
+
+		.name {
+			color: #95FC15;
+			font-size: 85px;
+		}
+
+		.works {
+			margin-top: 150px;
+			margin-bottom: 80px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.info {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.work {
+			width: 480px;
+			height: 400px;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 32px;
+			position: relative;
+		}
+
+		.work-information {
+			position: absolute;
+			right: 0;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			font-size: 48px;
+			font-family: 'Karla', sans-serif;
+			opacity: 0;
+			text-align: center;
+			transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+		}
+
+		.work:hover .work-information {
+			cursor: pointer;
+			background-color: rgba(0, 0, 0, .8);
+			opacity: 1;
+		}
+
+		.work h3 {
+			top: 35px;
+		}
+
+		.work img {
+			max-width: 100%;
+			object-fit: cover;
+		}
+
+		.work.work1 {
+			background-color: rgb(216, 213, 255);
+		}
+
+		.work.work2 {
+			background-color: rgb(197, 255, 245);
+		}
+
+		.footer a {
+			color: #333333;
+			text-decoration: none;
+			font-family: 'Karla', sans-serif;
+			letter-spacing: 1px;
+			font-size: 17px;
+		}
+
+		p {
+			font-family: 'Karla', sans-serif;
+			color: #333333;
+			font-size: 18px;
+		}
+
+		.footer {
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+
+		.footer a:hover {
+			border-bottom: 3px solid rgb(75, 75, 75);
+		}
+
+		@media(max-width:400px) {
+			nav.logo h1 {
+				text-align: center;
+				float: none;
+			}
+
+			nav.main-nav a {
+				text-align: center;
+				float: none;
+			}
+
+			nav.main-nav a.active {
+			border-bottom: 3px solid black;
+			}
+
+			nav.main-nav a.active {
+			border-bottom: 3px solid black;
+			}
+
+			nav.main-nav a:hover {
+			border-bottom: 3px solid #95FC15;
+			}
+
+			.work img {
+				object-fit: contain;
+			}
+
+			.work {
+				height: 300px;
+			}
+
+			.work-information {
+				font-size: 32px;
+			}
+		}
+
+		@media(max-width:768px) {
+			.works {
+				flex-direction: column;
+				margin-top: 100px;
+			}
+
+			.work {
+				margin-bottom: 20px;
+				width: 100%;
+			}
+
+			.work.work1 {
+				margin-right: 0px;
+			}
+
+			.work.work2 {
+				margin-left: 0px;
+			}
+
+			nav.main-nav {
+				flex-direction: column;
+			}
+
+			.logo h1 {
+				margin-bottom: 32px;
+			}
+
+			nav.main-nav a.active {
+			border-bottom: 3px solid black;
+			}
+
+			nav.main-nav a:hover {
+			border-bottom: 3px solid #95FC15;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="EA-container">
+		<section class="header">
+			<div class="" id="menu">
+				<nav class="main-nav">
+					<div class="logo">
+						<h1>EA</h1>
+					</div>
+					<div>
+						<a href="index.html" class="active">Work</a>
+						<a href="about.html" class="about">About</a>
+						<a href="Resume.pdf" target="_blank">Resume</a>
+					</div>
+				</nav>
+			</div>
+
+		</section>
+		<section class="intro">
+			<h1>
+				<span class="name">Hello!</span> I'm Eniola.
+			</h1>
+			<h4>UX Designer in Lagos, Nigeria. <br>I am obsessed with creating meaningful and delightful experiences for users</h4>
+		</section>
+		<section class="works">
+			<a href="https://www.figma.com/proto/gJfBMkrcyGL3olA9xIpRa67C/Couch-crashers?node-id=0%3A1&scaling=scale-down" target="_blank" class="work work1">
+				<img src="Couch Crashers.png" alt="Couch crashers" class="contain">
+				<div class="work-information">Couch Crashers</div>
+			</a>
+
+
+			<a href="https://www.figma.com/proto/efqzhXhrahkCYqMZLgH3SZ5l/Real-estate-Astro?node-id=0%3A1&scaling=min-zoom" target="_blank" class="work work2">
+				<img src="astro.png" alt="astro">
+				<div class="work-information">Astro Real estate
+				</div>
+			</a>
+		</section>
+		<section class="footer">
+			<div class="contact">
+				<center><a href="mailto:eniolabiola@gmail.com" target="_blank">Email</a>
+					|
+					<a href="https://www.linkedin.com/in/eniolaaminu/" target="_blank">LinkedIn</a>
+					|
+					<a href="https://www.behance.net/eniolabiol1fcc" target="_blank">Behance</a>
+					|
+					<a href="https://twitter.com/Folaranmiii" target="_blank">Twitter</a>
+					<br>
+					<p> Eniola Abiola © 2018</p>
+				</center>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>
